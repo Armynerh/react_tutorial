@@ -53,7 +53,7 @@ const TodoItem = ({itemProp, handleChange, delTodo, setUpdate}) => {
   )
 };
 TodoItem.propTypes = {
-    itemProp: PropTypes.func.isRequired,
+    itemProp: PropTypes.object.isRequired,
     handleChange: PropTypes.func.isRequired,
     delTodo: PropTypes.func.isRequired,
     setUpdate: PropTypes.func.isRequired,

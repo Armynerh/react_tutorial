@@ -7,7 +7,7 @@ return(
     ))}</ul>);
 };
 TodosList.propTypes = {
-    todosProps: PropTypes.func.isRequired,
+    todosProps: PropTypes.array.isRequired,
     handleChange: PropTypes.func.isRequired,
     delTodo: PropTypes.func.isRequired,
     setUpdate: PropTypes.func.isRequired,
