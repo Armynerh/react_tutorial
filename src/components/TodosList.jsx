@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import TodoItem from "@/components/TodoItem";
 const TodosList = ({todosProps, handleChange, delTodo, setUpdate}) => {
 return(
@@ -5,5 +6,10 @@ return(
        <TodoItem key={todo.id} itemProp={todo} handleChange={handleChange} delTodo={delTodo} setUpdate={setUpdate}/>
     ))}</ul>);
 };
-
+TodosList.propTypes = {
+    todosProps: PropTypes.func.isRequired,
+    handleChange: PropTypes.func.isRequired,
+    delTodo: PropTypes.func.isRequired,
+    setUpdate: PropTypes.func.isRequired,
+ }
 export default TodosList

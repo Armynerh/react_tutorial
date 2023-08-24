@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { useState } from 'react';
 import styles from '@/styles/TodoItem.module.css';
 const TodoItem = ({itemProp, handleChange, delTodo, setUpdate}) => {
@@ -51,5 +52,10 @@ const TodoItem = ({itemProp, handleChange, delTodo, setUpdate}) => {
     </>
   )
 };
-
+TodoItem.propTypes = {
+    itemProp: PropTypes.func.isRequired,
+    handleChange: PropTypes.func.isRequired,
+    delTodo: PropTypes.func.isRequired,
+    setUpdate: PropTypes.func.isRequired,
+ }
 export default TodoItem

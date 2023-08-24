@@ -5,7 +5,7 @@ import Login from '@/routes/Login';
 import Profile from '@/routes/Profile';
 import Layout from '@/components/Layout';
 import NotMatch from '@/routes/NotMatch';
-
+import SinglePage from '@/routes/SinglePage';
 const TodoApp = () => {
   return (
     <Routes>
